@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajian Investigatif & Kritis RUP Dinsos Tasikmalaya TA 2025–2026</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        header {
+            border-bottom: 3px double #e2e8f0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .doc-title {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0 0 10px 0;
+        }
+        .doc-subtitle {
+            font-size: 14pt;
+            color: #475569;
+            font-weight: 600;
+            margin: 0;
+        }
+        h2 {
+            font-size: 16pt;
+            color: #1e3a8a;
+            border-left: 5px solid #1e3a8a;
+            padding-left: 12px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 13pt;
+            color: #0f172a;
+            border-left: 4px solid #b91c1c;
+            padding-left: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 11pt;
+            color: #475569;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 11pt;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            font-size: 11pt;
+            margin-bottom: 8px;
+        }
+        .source-tag {
+            font-size: 9pt;
+            background-color: #f1f5f9;
+            color: #64748b;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 10.5pt;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+        .callout-box {
+            background-color: #fff1f2;
+            border-left: 5px solid #e11d48;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 25px 0;
+        }
+        .callout-title {
+            font-weight: bold;
+            color: #9f1239;
+            margin-bottom: 8px;
+            font-size: 11.5pt;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 8.5pt;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            margin-right: 5px;
+        }
+        .badge-danger { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+        .badge-warning { background-color: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+        .badge-success { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
+        .badge-info { background-color: #e0f2fe; color: #075985; border: 1px solid #7dd3fc; }
+        
+        .quote-block {
+            font-style: italic;
+            background-color: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            padding: 15px 20px;
+            margin: 25px 0;
+            font-weight: 500;
+            color: #14532d;
+            text-align: justify;
+        }
+        .skakmat-list li {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #ef4444;
+            padding: 10px 15px;
+            list-style-type: none;
+            margin-bottom: 10px;
+            border-radius: 0 4px 4px 0;
+            font-weight: 600;
+        }
+        .dalih-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .dalih-title {
+            font-weight: bold;
+            color: #475569;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .bantahan-title {
+            font-weight: bold;
+            color: #b91c1c;
+            margin-top: 10px;
+        }
+        .math-style {
+            font-family: 'Times New Roman', Serif;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="doc-title">Bab III — Analisis dan Pembahasan Kajian</div>
+        <div class="doc-subtitle">Kajian Investigatif dan Kritis atas RUP Dinas Sosial Kota Tasikmalaya TA 2025–2026</div>
+    </header>
+
+    <h2>3.1. Bedah Investigatif RUP: Pola Kejanggalan, Inefisiensi, dan Indikasi Maladministrasi</h2>
+    <p>Berdasarkan penelaahan terhadap dokumen RUP TA 2025 dan TA 2026 milik Dinas Sosial Kota Tasikmalaya, ditemukan pola pengadaan yang secara administratif tampak formal, namun secara substantif mengandung banyak indikator pemborosan, pengelabuan klasifikasi belanja, serta dugaan praktik pengadaan yang tidak memenuhi prinsip efisiensi, transparansi, dan akuntabilitas.</p>
+    <p>Selain itu, pola pengadaan dalam dokumen tersebut memperlihatkan kecenderungan birokrasi <strong>“menghabiskan anggaran”</strong> dibanding menyelesaikan problem kesejahteraan sosial secara nyata.</p>
+
+    <h3>A. Indikasi Penggelembungan dan Pemborosan Belanja Konsumtif</h3>
+    <h4>1. Belanja Makanan dan Minuman Rapat Bernilai Sangat Besar</h4>
+    <p>Dalam RUP TA 2025 terdapat paket: <span class="badge badge-danger">Temuan</span> <strong>“Belanja Makanan dan Minuman Rapat”</strong> senilai <span class="math-style">Rp419.500.000</span> dengan metode <em>Pengadaan Langsung</em>. <span class="source-tag">RUP DINSOS 2025.pdf</span></p>
+    <p>Padahal item yang dibeli hanya berupa:</p>
+    <ul>
+        <li>Jamuan makan,</li>
+        <li>Snack,</li>
+        <li>Prasmanan,</li>
+        <li>Snack VIP. <span class="source-tag">RUP DINSOS 2025.pdf</span></li>
+    </ul>
+
+    <p><strong>Kejanggalannya:</strong></p>
+    <ol type="a">
+        <li>
+            <strong>Nilai konsumsi terlalu besar dibanding urgensi sosial:</strong> 
+            Dinas Sosial adalah OPD pelayanan kelompok rentan. Namun anggaran konsumsi rapat mencapai ratusan juta rupiah, sementara kebutuhan alat bantu disabilitas dan bantuan sosial justru jauh lebih kecil dalam beberapa paket. Ini menunjukkan orientasi birokrasi lebih dominan pada rapat internal, seremonial, dan aktivitas administratif, dibanding intervensi sosial langsung.
+        </li>
+        <li>
+            <strong>Pengadaan Langsung untuk nilai besar:</strong> 
+            Walaupun secara formal masih bisa dikategorikan Pengadaan Langsung berdasarkan pemecahan akun, pola pengelompokan berbagai item makanan ke dalam satu paket besar berpotensi menjadi modus efisiensi semu, pengondisian vendor, atau penghindaran kompetisi terbuka.
+        </li>
+        <li>
+            <strong>Tidak ada aspek Sustainable Public Procurement (SPP):</strong> 
+            Seluruh aspek ekonomi, sosial, dan lingkungan diberi status “Tidak”. <span class="source-tag">RUP DINSOS 2025.pdf</span> Padahal pengadaan konsumsi dapat melibatkan UMKM lokal, produk pangan lokal, pemberdayaan kelompok rentan, atau mekanisme ramah lingkungan. Artinya, prinsip pengadaan modern berbasis keberlanjutan sama sekali tidak diterapkan.
+        </li>
+    </ol>
+
+    <h3>B. Indikasi Paket “Bantuan Sosial” Tidak Transparan dan Rentan Markup</h3>
+    <h4>2. Paket Bantuan Sosial Rp2,02 Miliar dengan Komponen Tidak Rasional</h4>
+    <p>RUP 2025 memuat paket: <span class="badge badge-danger">Temuan</span> <strong>“Belanja Barang untuk Dijual/Diserahkan kepada Masyarakat”</strong> senilai <span class="math-style">Rp2.022.264.000</span>. <span class="source-tag">RUP DINSOS 2025.pdf</span></p>
+    <p>Isi paket berupa:</p>
+    <ul>
+        <li>Beras,</li>
+        <li>Gula,</li>
+        <li>Mie,</li>
+        <li>Susu,</li>
+        <li>Minyak goreng,</li>
+        <li>Goodie bag,</li>
+        <li>Kue kering. <span class="source-tag">RUP DINSOS 2025.pdf</span></li>
+    </ul>
+
+    <p><strong>Temuan Kritis:</strong></p>
+    <ol type="a">
+        <li>
+            <strong>“Goodie bag” muncul berulang kali:</strong> 
+            Komponen “goodie bag” muncul berkali-kali dalam paket bantuan sosial. <span class="source-tag">RUP DINSOS 2025.pdf</span> Secara substansi, goodie bag bukan kebutuhan sosial primer, bukan alat perlindungan sosial, dan bukan kebutuhan kemiskinan ekstrem. 
+            <br><em>Pertanyaan investigatif:</em> Mengapa anggaran bantuan sosial justru memasukkan unsur kemasan seremonial? Ini membuka dugaan penggelembungan harga, pengadaan kosmetik birokrasi, dan pengalihan fokus dari substansi bantuan. Dalam praktik pengadaan, item seperti goodie bag sering menjadi ruang markup karena sulit diukur kualitasnya, mudah dimainkan spesifikasi, dan tidak ada standar harga baku nasional.
+        </li>
+        <li>
+            <strong>Spesifikasi terlalu umum dan tidak terukur:</strong> 
+            Contoh spesifikasi yang tertulis: <em>“230gr”, “@1Ltr”, “Kiloan”, “Bahan kain, sablon”</em>. <span class="source-tag">RUP DINSOS 2025.pdf</span> Tidak dijelaskan merek, standar mutu, kualitas minimal, standar distribusi, maupun mekanisme verifikasi penerima. Akibatnya rawan permainan kualitas, rawan barang murah dengan harga tinggi, dan rawan pengurangan isi paket.
+        </li>
+        <li>
+            <strong>Paket raksasa dengan metode E-Purchasing:</strong> 
+            Nilai Rp2 miliar menggunakan E-Purchasing. <span class="source-tag">RUP DINSOS 2025.pdf</span> Secara hukum memang dimungkinkan. Namun secara praktik, e-purchasing tanpa transparansi kuantitas rinci dan harga satuan tetap rawan markup, apalagi jika vendor sudah “dikondisikan” sejak awal, karena publik tidak diberi akses terhadap harga satuan, jumlah penerima, distribusi wilayah, serta rincian volume tiap barang. Kontrol sosial menjadi lumpuh.
+        </li>
+    </ol>
+
+    <h3>C. Indikasi Fragmentasi Paket dan Pengaburan Belanja</h3>
+    <h4>3. Paket “Penyediaan Alat Bantu” Dicampur dengan ATK dan Konsumsi</h4>
+    <p>Dalam RUP 2026 terdapat paket: <span class="badge badge-danger">Temuan</span> <strong>“Penyediaan Alat Bantu”</strong> senilai <span class="math-style">Rp150.000.000</span>. <span class="source-tag">RUP DINSOS 2026.pdf</span> Namun isi paket justru mencampur adukkan komponen:</p>
+    <ul>
+        <li>Kursi roda, kruk, walker <span class="badge badge-info">Substansi</span></li>
+        <li>Tinta printer, fotokopi, spanduk, ATK, snack rapat, BBM Pertamax, penjilidan <span class="badge badge-warning">Operasional Kantor</span> <span class="source-tag">RUP DINSOS 2026.pdf</span></li>
+    </ul>
+    <p>Ini merupakan salah satu temuan paling problematik.</p>
+
+    <p><strong>Analisis Kritis:</strong></p>
+    <ol type="a">
+        <li>
+            <strong>Pengaburan klasifikasi belanja:</strong> Belanja alat bantu sosial dicampur dengan kebutuhan operasional kantor. Dampaknya, anggaran ini sulit diaudit, sulit diukur output sosialnya, dan membuka ruang manipulasi realisasi.
+        </li>
+        <li>
+            <strong>Indikasi “titipan anggaran”:</strong> ATK, spanduk, fotokopi, dan snack dapat menjadi biaya siluman, pelengkap administratif, atau ruang mark-up kecil yang akumulatif.
+        </li>
+        <li>
+            <strong>Mengaburkan evaluasi manfaat sosial:</strong> Ketika alat bantu disabilitas dicampur dengan pengeluaran kantor, publik tidak bisa mengetahui berapa nilai riil bantuan masyarakat, sehingga bantuan sosial menjadi kabur secara fiskal.
+        </li>
+    </ol>
+
+    <h3>D. Indikasi Ketidakberesan Pembayaran Tahun Sebelumnya</h3>
+    <h4>4. Pembayaran Pekerjaan Tahun Sebelumnya Bernilai Fantastis</h4>
+    <p>RUP 2026 memuat tiga paket: <span class="badge badge-danger">Temuan</span> <strong>“Pembayaran atas pekerjaan yang telah diselesaikan pada Tahun Anggaran Sebelumnya”</strong> dengan rincian nilai:</p>
+    <ul>
+        <li><span class="math-style">Rp451.985.205</span> <span class="source-tag">RUP DINSOS 2026.pdf</span></li>
+        <li><span class="math-style">Rp743.538.600</span> <span class="source-tag">RUP DINSOS 2026.pdf</span></li>
+        <li><span class="math-style">Rp783.420.900</span> <span class="source-tag">RUP DINSOS 2026.pdf</span></li>
+        <li><strong>Total Akumulasi: Lebih dari <span class="math-style">Rp1,97 Miliar</span></strong></li>
+    </ul>
+    <p>Pola ini sangat problematik karena beberapa alasan:</p>
+    <ol type="a">
+        <li>
+            <strong>Menunjukkan perencanaan anggaran gagal:</strong> Jika pekerjaan sudah selesai tahun sebelumnya tetapi baru dibayar tahun berikutnya, maka perencanaan APBD bermasalah, cashflow tidak sehat, atau terjadi hutang kegiatan.
+        </li>
+        <li>
+            <strong>Rawan pengadaan fiktif:</strong> Karena pekerjaan disebut sudah selesai namun pembayaran baru muncul kemudian, publik tidak bisa menguji apakah barang benar ada, apakah distribusi benar terjadi, dan apakah penerima benar menerima.
+        </li>
+        <li>
+            <strong>Celah rekayasa administratif:</strong> Pola seperti ini sering digunakan untuk “menyelamatkan” kegiatan, memutihkan realisasi, atau menutup kekurangan dokumen.
+        </li>
+    </ol>
+
+    <h3>E. Indikasi Lemahnya Transparansi dan Akuntabilitas</h3>
+    <p>Dari keseluruhan dokumen ditemukan pola sistemik berupa: spesifikasi sangat umum, volume tidak rinci, penerima bantuan tidak dijelaskan, distribusi wilayah tidak disebut, dan indikator keberhasilan nihil. Padahal pengadaan bansos harus sangat transparan karena menyangkut kelompok miskin, lansia, disabilitas, dan masyarakat rentan. Kondisi ini bertentangan dengan prinsip transparansi, akuntabilitas, dan keterbukaan informasi publik.</p>
+
+    <h2>3.2. Konstruksi Argumentasi Gugatan dan Dasar Hukum</h2>
+    
+    <h4>A. Dugaan Pelanggaran Prinsip Pengadaan Barang/Jasa</h4>
+    <p><strong>Dasar Hukum:</strong> Pasal 6 Peraturan Presiden Nomor 16 Tahun 2018 jo. Peraturan Presiden Nomor 12 Tahun 2021.</p>
+    <p>Pengadaan wajib memenuhi prinsip: <em>efisien, efektif, transparan, terbuka, bersaing, adil, dan akuntabel</em>. Penemuan belanja konsumsi besar, paket bercampur, spesifikasi kabur, serta pembayaran lintas tahun menunjukkan ketidaksesuaian total dengan prinsip pengadaan negara.</p>
+
+    <h4>B. Dugaan Maladministrasi</h4>
+    <p><strong>Dasar Hukum:</strong> Undang-Undang Nomor 37 Tahun 2008 tentang Ombudsman Republik Indonesia.</p>
+    <p>Maladministrasi mencakup penyalahgunaan wewenang, pengabaian kewajiban hukum, penyimpangan prosedur, dan ketidaktransparanan. Pola penggabungan item tak relevan, spesifikasi kabur, serta ketidakjelasan penerima bansos berpotensi kuat masuk kategori maladministrasi.</p>
+
+    <h4>C. Dugaan Potensi Kerugian Negara</h4>
+    <p><strong>Dasar Hukum:</strong> Undang-Undang Nomor 31 Tahun 1999 jo. Undang-Undang Nomor 20 Tahun 2001 tentang Pemberantasan Tindak Pidana Korupsi (khususnya Pasal 2 dan Pasal 3).</p>
+    <p>Jika ditemukan markup, penyalahgunaan kewenangan, pengadaan tidak sesuai kebutuhan, atau pembayaran tanpa output nyata, maka dapat dikualifikasikan sebagai perbuatan melawan hukum yang merugikan keuangan negara.</p>
+
+    <h4>D. Dugaan Pelanggaran Keterbukaan Informasi Publik</h4>
+    <p><strong>Dasar Hukum:</strong> Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik.</p>
+    <p>Publik berhak mengetahui rincian penerima bansos, distribusi bantuan, spesifikasi barang, dan nilai satuan pengadaan. Menutup atau menyembunyikan data tersebut melanggar hak publik atas informasi.</p>
+
+    <h2>3.3. Kesimpulan Hasil Kajian (Narasi Konklusi BAB III)</h2>
+    <div class="quote-block">
+        “Berdasarkan hasil analisis terhadap RUP Dinas Sosial Kota Tasikmalaya TA 2025–2026, ditemukan pola pengadaan yang secara administratif tampak memenuhi prosedur formal, namun secara substantif mengandung banyak indikasi inefisiensi, pengaburan klasifikasi belanja, lemahnya transparansi, serta potensi maladministrasi dalam pengelolaan anggaran sosial daerah. Dominasi belanja konsumtif, munculnya item non-esensial seperti goodie bag dalam paket bantuan sosial, pencampuran alat bantu masyarakat dengan ATK dan kebutuhan operasional kantor, serta munculnya pembayaran pekerjaan tahun sebelumnya bernilai miliaran rupiah menunjukkan bahwa orientasi kebijakan pengadaan belum sepenuhnya berpihak pada efektivitas perlindungan sosial masyarakat rentan. Kondisi tersebut memperlihatkan adanya jurang antara tujuan normatif kesejahteraan sosial dengan praktik birokrasi pengadaan di lapangan. Lebih jauh, lemahnya rincian spesifikasi, tidak jelasnya distribusi penerima manfaat, dan absennya indikator output sosial menjadikan pengadaan bansos berada dalam zona rawan markup, manipulasi realisasi, pengadaan tidak tepat sasaran, hingga potensi kerugian keuangan negara. Dengan demikian, RUP Dinas Sosial Kota Tasikmalaya TA 2025–2026 layak diduga tidak sepenuhnya memenuhi prinsip efisiensi, efektivitas, transparansi, akuntabilitas, dan kepentingan publik, sebagaimana diamanatkan dalam regulasi pengadaan barang/jasa pemerintah dan tata kelola pemerintahan yang baik.”
+    </div>
+
+    <h2>3.4. Simulasi Counter-Argument dan Bantahan Balik</h2>
+    
+    <div class="dalih-box">
+        <div class="dalih-title">Dalih 1: “Semua pengadaan sudah sesuai aturan dan tayang di SiRUP.”</div>
+        <div class="bantahan-title">Bantahan Balik:</div>
+        <p>Kepatuhan administratif bukan bukti tidak adanya penyimpangan substantif. Korupsi modern justru sering legal secara dokumen, tetapi bermasalah secara substansi. Yang dipersoalkan bukan sekadar penayangan di SiRUP, melainkan relevansi anggaran, efisiensi, rasionalitas belanja, dan realitas manfaat publiknya.</p>
+    </div>
+
+    <div class="dalih-box">
+        <div class="dalih-title">Dalih 2: “Goodie bag diperlukan untuk distribusi bantuan.”</div>
+        <div class="bantahan-title">Bantahan Balik:</div>
+        <p>Goodie bag bukan kebutuhan primer masyarakat miskin. Jika tujuan utama adalah perlindungan sosial, maka anggaran harus difokuskan pada isi bantuan, bukan kosmetik kemasan. Kebijakan ini justru memperbesar biaya non-substantif dan membuka ruang markup.</p>
+    </div>
+
+    <div class="dalih-box">
+        <div class="dalih-title">Dalih 3: “Penggabungan paket untuk efisiensi administrasi.”</div>
+        <div class="bantahan-title">Bantahan Balik:</div>
+        <p>Penggabungan alat bantu disabilitas dengan ATK, BBM, snack, dan fotokopi justru mengaburkan objek belanja dan menyulitkan audit manfaat sosial. Efisiensi administrasi tidak boleh mengorbankan transparansi dan akuntabilitas fiskal.</p>
+    </div>
+
+    <div class="dalih-box">
+        <div class="dalih-title">Dalih 4: “Pembayaran tahun sebelumnya adalah hal biasa.”</div>
+        <div class="bantahan-title">Bantahan Balik:</div>
+        <p>Jika nilainya hampir Rp2 miliar, maka itu bukan persoalan teknis biasa. Publik berhak mempertanyakan mengapa pekerjaan selesai tetapi baru dibayar, apakah ada hutang kegiatan, apakah barang benar diterima, dan apakah distribusi benar-benar terjadi di lapangan.</p>
+    </div>
+
+    <div class="dalih-box">
+        <div class="dalih-title">Dalih 5: “Semua bantuan sudah tepat sasaran.”</div>
+        <div class="bantahan-title">Bantahan Balik:</div>
+        <p>Mana datanya? Jika daftar penerima, distribusi wilayah, volume riil, dan dokumentasi penyaluran tidak dibuka ke publik, maka klaim tepat sasaran hanyalah asumsi sepihak birokrasi. Dalam tata kelola bansos modern, akuntabilitas tidak cukup dengan klaim, melainkan pembuktian data terbuka.</p>
+    </div>
+
+    <h2>3.5. Sinkronisasi Temuan RUP dengan Regulasi Nasional dan Daerah</h2>
+    <p>Kajian ini disusun dengan menyinkronkan langsung isi RUP, metode pengadaan, dan pola belanja dengan prinsip hukum pengadaan nasional terbaru yang berlaku, guna menjamin pertanggungjawaban akademis, hukum administrasi, hingga ranah hukum pidana.</p>
+
+    <h4>A. Sinkronisasi Temuan dengan Perpres Pengadaan Terbaru</h4>
+    <p>Sesuai Pasal 6 Perpres No. 16/2018 jo. Perpres No. 12/2021, berikut matriks potensi pelanggaran prinsip pengadaan negara:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Temuan di RUP</th>
+                <th>Potensi Pelanggaran Prinsip</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Belanja konsumsi rapat Rp419 juta</td>
+                <td><span class="badge badge-danger">Pelanggaran</span> Tidak efisien dan tidak efektif</td>
+            </tr>
+            <tr>
+                <td>Goodie bag dalam bansos Rp2 miliar</td>
+                <td><span class="badge badge-danger">Pelanggaran</span> Tidak tepat guna / pemborosan</td>
+            </tr>
+            <tr>
+                <td>Spesifikasi sangat umum</td>
+                <td><span class="badge badge-danger">Pelanggaran</span> Tidak transparan</td>
+            </tr>
+            <tr>
+                <td>Paket alat bantu dicampur ATK & snack</td>
+                <td><span class="badge badge-danger">Pelanggaran</span> Tidak akuntabel</td>
+            </tr>
+            <tr>
+                <td>Pembayaran pekerjaan tahun sebelumnya Rp1,97 miliar</td>
+                <td><span class="badge badge-danger">Pelanggaran</span> Lemah perencanaan dan kontrol kas</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>B. Pelanggaran Konsep Perencanaan Pengadaan</h4>
+    <p><strong>Regulasi:</strong> Pasal 18 Perpres 16/2018 mengatur bahwa perencanaan pengadaan wajib berbasis kebutuhan riil perangkat daerah dan disusun bersamaan dengan RKA.</p>
+    <p><strong>Fakta RUP:</strong> Dalam paket “Penyediaan Alat Bantu” Rp150.000.000, ditemukan item spanduk, fotokopi, BBM Pertamax, snack, ATK, dan penjilidan. <span class="source-tag">RUP DINSOS 2026.pdf</span></p>
+    <p><strong>Analisis Hukum:</strong> Kebutuhan sosial dicampur dengan kebutuhan operasional kantor menunjukkan perencanaan yang tidak fokus. Secara hukum administrasi, pengadaan tidak boleh dibuat menjadi "keranjang campur aduk" karena menyulitkan audit manfaat dan membuka ruang manipulasi item anggaran.</p>
+
+    <h4>C. Dugaan Pelanggaran Spesifikasi Teknis/KAK</h4>
+    <p><strong>Regulasi:</strong> Pasal 19 Perpres 16/2018 mewajibkan spesifikasi teknis/KAK disusun secara jelas, terukur, dan mempertimbangkan kualitas barang/jasa.</p>
+    <p><strong>Fakta RUP:</strong> Ditemukan spesifikasi kabur seperti <em>“230gr”, “@1Ltr”, “Kiloan”, “Bahan kain sablon”</em> pada paket bansos Rp2,02 miliar. <span class="source-tag">RUP DINSOS 2025.pdf</span></p>
+    <p><strong>Implikasi Hukum:</strong> Ketidakjelasan standar mutu, merek, atau SNI menyebabkan harga mudah dimainkan, kualitas barang sulit diuji, serta rawan manipulasi HPS. Hal ini bertentangan dengan prinsip <em>value for money</em>.</p>
+
+    <h4>D. Dugaan Pengaburan Objek Belanja</h4>
+    <p>Nama paket tertulis <strong>“Penyediaan Alat Bantu”</strong> <span class="source-tag">RUP DINSOS 2026.pdf</span>, namun isinya mencakup tinta printer, pulpen, binder clip, spanduk, snack, BBM, fotokopi, dan penjilidan. Dalam audit investigatif Badan Pemeriksa Keuangan (BPK), pola diskrepansi ini dikategorikan sebagai <strong>“belanja tidak sesuai nomenklatur substantif”</strong> yang mengaburkan objek belanja nyata dari pengawasan publik.</p>
+
+    <h4>E. Dugaan Pemborosan dan Markup Sosial</h4>
+    <p>Kemunculan item <strong>goodie bag</strong> secara berulang dalam paket bansos Rp2,02 miliar <span class="source-tag">RUP DINSOS 2025.pdf</span> tidak memiliki urgensi bagi lansia miskin, disabilitas, atau keluarga rentan. Kemasan kosmetik ini meningkatkan biaya non-substantif, memperbesar celah markup, dan mengaburkan pemenuhan kebutuhan perlindungan sosial yang riil.</p>
+
+    <h4>F. Dugaan Maladministrasi</h4>
+    <p>Merujuk pada UU Nomor 37 Tahun 2008, berikut pemetaan tindakan maladministrasi dalam dokumen RUP:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Temuan RUP</th>
+                <th>Bentuk Dugaan Maladministrasi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paket pengadaan campur aduk</td>
+                <td>Penyimpangan prosedur administrasi</td>
+            </tr>
+            <tr>
+                <td>Spesifikasi teknis kabur</td>
+                <td>Pengabaian kewajiban hukum akuntabilitas</td>
+            </tr>
+            <tr>
+                <td>Pembayaran lintas tahun anggaran</td>
+                <td>Lemah tata kelola & pelanggaran tertib anggaran</td>
+            </tr>
+            <tr>
+                <td>Tidak jelas basis data penerima bansos</td>
+                <td>Ketidaktransparanan pelayanan publik</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>G. Dugaan Pelanggaran Keterbukaan Informasi Publik</h4>
+    <p>Berdasarkan UU Nomor 14 Tahun 2008 Pasal 7 dan Pasal 9, badan publik wajib menyediakan informasi pengadaan dan laporan keuangan yang akurat serta tidak menyesatkan. Absennya rincian penerima, lokasi distribusi, volume detail, harga satuan, dan vendor penyedia melumpuhkan kemampuan publik untuk menguji ketepatan sasaran anggaran.</p>
+
+    <h4>H. Dugaan Potensi Tindak Pidana Korupsi</h4>
+    <p>Berdasarkan UU Nomor 31 Tahun 1999 jo. UU Nomor 20 Tahun 2001, unsur dalam <strong>Pasal 2</strong> (perbuatan melawan hukum yang memperkaya diri/orang lain dan merugikan negara) serta <strong>Pasal 3</strong> (penyalahgunaan wewenang) berpotensi terpenuhi apabila dalam pelaksanaan fisik ditemukan markup harga bansos, rekayasa spesifikasi, pembayaran tanpa output, maupun pengadaan fiktif.</p>
+
+    <h4>I. Kajian Kritis terhadap Pembayaran Tahun Sebelumnya</h4>
+    <p>Alokasi anggaran pada TA 2026 sebesar <span class="math-style">Rp451 juta</span>, <span class="math-style">Rp743 juta</span>, dan <span class="math-style">Rp783 juta</span> untuk pelunasan pekerjaan tahun lalu menunjukkan adanya indikasi utang kegiatan atau keterlambatan pembayaran akibat pengelolaan kas yang tidak sehat. Secara investigatif, pola ini rawan dimanfaatkan sebagai celah rekayasa administratif untuk memutihkan realisasi anggaran masa lalu.</p>
+
+    <h4>J. Sinkronisasi dengan Tugas Pokok dan Fungsi Dinas Sosial</h4>
+    <p>Secara filosofis, mandat utama Dinas Sosial adalah pengentasan kemiskinan, perlindungan disabilitas, lansia, dan rehabilitasi sosial. Tingginya porsi konsumsi rapat serta pencampuran komponen ATK ke dalam bantuan masyarakat menunjukkan diskoneksi mendasar antara arah fiskal pengadaan dengan prioritas penanganan krisis sosial daerah.</p>
+
+    <div class="quote-block" style="border-left-color: #b91c1c; color: #7f1d1d; background-color: #fef2f2;">
+        <strong>Kalimat Penutup Tajam Bab III:</strong><br>
+        “Berdasarkan sinkronisasi antara dokumen RUP, prinsip pengadaan nasional, ketentuan keterbukaan informasi publik, dan asas tata kelola pemerintahan yang baik, ditemukan bahwa pola pengadaan pada Dinas Sosial Kota Tasikmalaya TA 2025–2026 tidak sekadar menunjukkan kelemahan administratif biasa, melainkan memperlihatkan gejala sistemik berupa pengaburan objek belanja, lemahnya transparansi, pemborosan anggaran sosial, dan potensi penyimpangan tata kelola keuangan daerah yang secara substantif bertentangan dengan prinsip efisiensi, efektivitas, akuntabilitas, dan kepentingan publik.”
+    </div>
+
+    <h2>3.6. Analisis Forensik Struktur RUP: Membongkar Bahasa Birokrasi yang Disamarkan</h2>
+    <p>Teknik pengaburan dokumen pengadaan sering menggunakan nomenklatur rumit agar terhindar dari pengawasan masyarakat. Analisis forensik ini dilakukan untuk membongkar sandi birokrasi tersebut agar posisi argumen kita tidak dapat dipatahkan saat audiensi.</p>
+
+    <h4>A. Pembongkaran Makna Kode Rekening RUP</h4>
+    <p>Sebagai contoh, mari bedah struktur kode rekening berikut: <code>1.06.04.2.01.0001.5.1.02.01.01.0039</code></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Segmentasi Kode</th>
+                <th>Makna Nomenklatur Keuangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td>Urusan Pemerintahan Wajib</td>
+            </tr>
+            <tr>
+                <td><strong>1.06</strong></td>
+                <td>Urusan Pemerintahan Bidang Sosial</td>
+            </tr>
+            <tr>
+                <td><strong>1.06.04</strong></td>
+                <td>Program Rehabilitasi Sosial</td>
+            </tr>
+            <tr>
+                <td><strong>2.01</strong></td>
+                <td>Kegiatan Operasional / Pelayanan</td>
+            </tr>
+            <tr>
+                <td><strong>0001</strong></td>
+                <td>Sub-Kegiatan Spesifik</td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td>Klasifikasi Belanja Daerah</td>
+            </tr>
+            <tr>
+                <td><strong>5.1</strong></td>
+                <td>Belanja Operasi</td>
+            </tr>
+            <tr>
+                <td><strong>5.1.02</strong></td>
+                <td>Belanja Barang dan Jasa</td>
+            </tr>
+            <tr>
+                <td><strong>5.1.02.01</strong></td>
+                <td>Belanja Barang Kontrak/Penyedia</td>
+            </tr>
+            <tr>
+                <td><strong>0039</strong></td>
+                <td>Jenis Objek Belanja Barang Spesifik</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Titik Serang:</strong> Kode rekening yang diplot adalah untuk pos Bantuan/Rehabilitasi Sosial, tetapi isi rincian paket di dalamnya dicampur dengan pengeluaran operasional (snack, spanduk, BBM, penjilidan). Ini merupakan inkonsistensi anggaran yang fatal.</p>
+
+    <h4>B. Bedah “Diksi Kabur” Belanja Barang Diserahkan kepada Masyarakat</h4>
+    <p>Frasa <em>“Belanja Barang untuk Dijual/Diserahkan kepada Masyarakat”</em> muncul berulang kali pada TA 2025 dan 2026. <span class="source-tag">RUP DINSOS 2025.pdf</span> <span class="source-tag">RUP DINSOS 2026.pdf</span> Nomenklatur ini mewajibkan adanya basis data penerima, target wilayah, dan indikator output. Tanpa parameter tersebut, klaim penyerahan bantuan hanya menjadi jargon administratif yang rawan fiktif.</p>
+
+    <h4>C. Bedah Diksi “1 Paket”</h4>
+    <p>Penulisan volume pengadaan berupa <strong>“1 Paket”</strong> secara konstan pada proyek senilai miliaran rupiah <span class="source-tag">RUP DINSOS 2025.pdf</span> sengaja menyembunyikan kuantitas riil, harga satuan barang, dan volume per item, sehingga melumpuhkan kemampuan publik dalam menguji kewajaran harga pasar (HPS).</p>
+
+    <h4>D. Bedah “Spesifikasi Palsu”</h4>
+    <p>Pencantuman keterangan seperti <em>“230gr”, “Kiloan”, “@1Ltr”, “Hearing Amplifier”</em> <span class="source-tag">RUP DINSOS 2025.pdf</span> <span class="source-tag">RUP DINSOS 2026.pdf</span> dikategorikan sebagai spesifikasi palsu/formalitas minimal. Ketiadaan standar mutu SNI atau spesifikasi teknis baku memberikan kebebasan bagi vendor untuk menyuplai barang berkualitas rendah dengan harga tinggi.</p>
+
+    <h4>E. Pembongkaran Pola “Goodie Bag”</h4>
+    <p>Komponen kemasan sablon/goodie bag yang disisipkan dalam paket bansos Rp2,02 miliar <span class="source-tag">RUP DINSOS 2025.pdf</span> rentan dijadikan instrumen markup biaya karena tidak memiliki standardisasi harga nasional baku serta sulit diverifikasi jumlah riilnya secara fisik oleh masyarakat luar.</p>
+
+    <h4>F. Bedah Paket “Penyediaan Alat Bantu”</h4>
+    <p>Paket Penyediaan Alat Bantu senilai Rp150 juta <span class="source-tag">RUP DINSOS 2026.pdf</span> yang dicampur dengan BBM Pertamax, ATK, fotokopi, dan penjilidan <span class="source-tag">RUP DINSOS 2026.pdf</span> menjadi titik skakmat terkuat. Pemisahan antara belanja modal sosial dan operasional kantor adalah pilar mutlak dalam akuntabilitas keuangan negara.</p>
+
+    <h4>G. Bedah “Pembayaran Pekerjaan Tahun Sebelumnya”</h4>
+    <p>Diksi pelunasan senilai total <span class="math-style">Rp1,97 Miliar</span> pada RUP TA 2026 <span class="source-tag">RUP DINSOS 2026.pdf</span> memicu pertanyaan investigatif mendasar: Apakah terdapat utang kegiatan yang dipaksakan tanpa ketersediaan kas? Dokumen berita acara serah terima (BAST) dan bukti fisik penyaluran barang pada tahun lalu wajib diuji secara forensik.</p>
+
+    <h4>H. Bedah Metode “Pengadaan Langsung”</h4>
+    <p>Metode Pengadaan Langsung pada paket bernilai ratusan juta rupiah meminimalkan iklim kompetisi terbuka, memicu risiko penunjukan vendor langganan, serta rawan rekayasa pemecahan paket untuk menghindari tender.</p>
+
+    <h4>I. Bedah E-Purchasing yang Menyesatkan</h4>
+    <p>Pemanfaatan sistem E-Purchasing seringkali dijadikan perisai oleh birokrasi dengan dalih keamanan sistem e-katalog. Padahal, kuantitas volume, spesifikasi kualitas, dan negosiasi harga di balik layar tetap menyisakan ruang manipulasi yang besar apabila kontrak ditujukan pada vendor yang telah dikondisikan.</p>
+
+    <h4>J. Titik Paling Berbahaya: Tidak Ada Data Output Sosial</h4>
+    <p>Dinas Sosial bertindak sebagai instansi pelayanan kemanusiaan, bukan korporasi dagang. Ketiadaan target kuantitatif penurunan angka kemiskinan atau jumlah disabilitas yang terentaskan membuktikan bahwa orientasi pengadaan ini murni berfokus pada penyerapan anggaran secara formalitas belaka.</p>
+
+    <h4>K. Serangan Pamungkas Saat Audiensi</h4>
+    <div class="quote-block" style="border-left-color: #0f172a; background-color: #f1f5f9; color: #334155;">
+        “Yang kami persoalkan bukan sekadar prosedur administrasi, tetapi substansi penggunaan uang rakyat. Karena dalam RUP ini kami menemukan pola pengadaan yang kabur, bercampur, tidak rinci, tidak transparan, dan tidak menunjukkan ukuran manfaat sosial yang jelas. Bantuan sosial dicampur dengan ATK, snack, BBM, hingga goodie bag. Pertanyaannya sederhana: apakah Dinas Sosial sedang mengurus masyarakat rentan, atau sedang mengurus administrasi belanja birokrasi?”
+    </div>
+
+    <div class="callout-box">
+        <div class="callout-title">⚠️ POIN SKAKMAT TERKUAT (Gunakan Urutan Ini Saat Audiensi):</div>
+        <ol class="skakmat-list">
+            <li>“Kenapa paket alat bantu disabilitas dicampur dengan fotokopi, spanduk, dan BBM?”</li>
+            <li>“Mana rincian data dan jumlah penerima bansos yang jelas per kecamatan?”</li>
+            <li>“Mana data harga satuan tiap komponen barang dalam paket bansos Rp2 Miliar?”</li>
+            <li>“Apa urgensi dan dasar hukum memasukkan komponen kemasan goodie bag ke dalam alokasi bantuan perlindungan sosial?”</li>
+            <li>“Jika pekerjaan diklaim telah selesai secara fisik tahun lalu, mengapa pelunasan pembayaran senilai Rp1,97 Miliar didelegasikan pada tahun anggaran sekarang?”</li>
+            <li>“Bagaimana publik dapat melakukan fungsi kontrol dan audit jika volume pengadaan miliaran rupiah hanya ditulis ‘1 Paket’?”</li>
+            <li>“Di mana indikator capaian dan ukuran keberhasilan sosial dari seluruh rangkaian pengadaan komoditas ini?”</li>
+        </ol>
+    </div>
+
+    <h4>Kesimpulan Investigatif Final</h4>
+    <p>Semakin dalam RUP ini dibedah, semakin terlihat bahwa dokumen dibuat sangat administratif, tetapi miskin transparansi substantif. Bahasa birokrasi digunakan untuk menyamarkan rincian, mengaburkan nilai riil, mempersulit pengawasan publik, dan memperlemah kontrol sosial. Akibatnya, RUP Dinas Sosial Kota Tasikmalaya TA 2025–2026 tidak hanya menunjukkan lemahnya tata kelola pengadaan, tetapi juga memperlihatkan gejala birokrasi anggaran yang lebih berorientasi pada realisasi belanja daripada efektivitas perlindungan sosial masyarakat rentan.</p>
+
+    <h2>3.7. Analisis Urgensi dan Rasionalitas Anggaran</h2>
+    <p>Dalam tata kelola keuangan publik modern, keberhasilan kinerja instansi diukur berdasarkan terselesaikannya masalah sosial di masyarakat, bukan sekadar habisnya penyerapan pagu fiskal daerah.</p>
+
+    <h4>A. Masalah Besarnya: Orientasi Belanja Tidak Proporsional dengan Krisis Sosial</h4>
+    <p>Struktur anggaran memperlihatkan ketidakseimbangan alokasi, di mana instansi lebih memprioritaskan belanja konsumtif operasional birokrasi (snack, rapat, kemasan, seremonial) dibandingkan dengan intervensi langsung terhadap penanggulangan kemiskinan ekstrem serta rehabilitasi kelompok rentan.</p>
+
+    <h4>B. Analisis Rasionalitas Belanja Konsumsi Rapat Rp419 Juta</h4>
+    <p>Alokasi anggaran makanan dan minuman rapat sebesar <span class="math-style">Rp419.500.000</span> <span class="source-tag">RUP DINSOS 2025.pdf</span> sangat melukai rasa keadilan sosial. Mari bandingkan dengan potensi manfaat nyata jika dialihkan ke instrumen perlindungan sosial:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Alokasi Anggaran RUP Dinsos</th>
+                <th>Potensi Pengalihan Manfaat Nyata untuk Rakyat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Rp419.500.000</strong> dialokasikan untuk snack/makan rapat internal birokrasi</td>
+                <td>Dapat dikonversi menjadi <strong>&plusmn; 80 – 100 Unit Kursi Roda</strong> standar medis bagi penyandang disabilitas fisik.</td>
+            </tr>
+            <tr>
+                <td><strong>Rp419.500.000</strong> dihabiskan untuk konsumsi seremonial administratif</td>
+                <td>Dapat menyediakan <strong>Ribuan Paket Nutrisi Khusus</strong> untuk lansia terlantar dan balita stunting.</td>
+            </tr>
+            <tr>
+                <td><strong>Rp419.500.000</strong> diplot untuk konsumsi rapat operasional</td>
+                <td>Dapat dijadikan <strong>Bantuan Modal Usaha Mikro</strong> bagi puluhan keluarga miskin ekstrem guna kemandirian ekonomi.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><em>Narasi Serangan:</em> “Di saat masyarakat miskin membutuhkan intervensi nyata, justru anggaran ratusan juta habis untuk konsumsi birokrasi. Ini menunjukkan orientasi pelayanan sosial bergeser menjadi orientasi kenyamanan internal kantor.”</p>
+
+    <h4>C. Goodie Bag vs Kebutuhan Sosial</h4>
+    <p>Masyarakat miskin membutuhkan <strong>isi bantuan (substansi sembako)</strong> untuk menyambung hidup, bukan nilai estetika kemasan (goodie bag sablon). Pengadaan kemasan cantik ini tidak meluruskan disabilitas, tidak menurunkan angka kemiskinan, melainkan hanya mempercantik visual pencitraan birokrasi dan memboroskan kas daerah.</p>
+
+    <h4>D. Alat Bantu Dicampur ATK dan Spanduk</h4>
+    <p>Penggabungan item kursi roda dan walker bersama dengan spanduk, tinta printer, dan snack rapat senilai Rp150 juta <span class="source-tag">RUP DINSOS 2026.pdf</span> menggagalkan fungsi audit eksternal. Seharusnya paket dipisahkan secara tegas:</p>
+    <ul>
+        <li><strong>Paket 1 (Fokus Kelompok Rentan):</strong> Kursi roda, walker, alat bantu dengar.</li>
+        <li><strong>Paket 2 (Fokus Operasional):</strong> ATK, tinta, spanduk, fotokopi, penjilidan.</li>
+    </ul>
+    <p>Pemisahan ini mutlak dilakukan agar masyarakat dapat melacak nilai bersih (net value) anggaran yang benar-benar tersalurkan ke penerima manfaat.</p>
+
+    <h4>E. Pembayaran Pekerjaan Tahun Sebelumnya Rp1,97 Miliar</h4>
+    <p>Beban utang senilai <span class="math-style">Rp1,97 Miliar</span> yang ditarik ke TA 2026 <span class="source-tag">RUP DINSOS 2026.pdf</span> menegaskan buruknya manajemen perencanaan kas daerah. Siklus anggaran yang tidak sehat ini mengorbankan ruang fiskal tahun berjalan yang seharusnya bisa dioptimalkan untuk program jaminan sosial baru.</p>
+
+    <h4>F. Absennya Target Dampak Sosial</h4>
+    <p>Dokumen RUP ini lumpuh dalam mengartikulasikan indikator keberhasilan sosial. Tidak ada target kuantitatif penurunan persentase kemiskinan kota, target penyerapan anak telantar, maupun aksesibilitas disabilitas. Pola ini mengonfirmasi anggapan bahwa instansi bekerja sekadar demi membeli barang dagangan pengadaan, bukan menyelamatkan struktur sosial masyarakat.</p>
+
+    <h4>G. Rekomendasi Prioritas Alokasi Rill Anggaran Dinas Sosial</h4>
+    <p>Apabila Dinas Sosial memiliki komitmen moral terhadap rakyat, anggaran wajib dialihkan pada 5 pilar prioritas berikut:</p>
+    <ol>
+        <li><strong>Basis Data Kemiskinan Presisi:</strong> Audit data berkala guna meminimalkan bansos salah sasaran.</li>
+        <li><strong>Bantuan Disabilitas Berkelanjutan:</strong> Penyediaan alat bantu aksesibilitas terpadu, bukan pembagian seremonial tahunan.</li>
+        <li><strong>Rehabilitasi Lansia dan ODGJ Terlantar:</strong> Penyediaan panti, jaminan kesehatan, dan perlindungan kemanusiaan primer.</li>
+        <li><strong>Pemberdayaan Ekonomi Produktif:</strong> Penyaluran stimulan modal usaha terarah bagi kepala keluarga miskin.</li>
+        <li><strong>Digitalisasi Monitoring Penyaluran Bansos:</strong> Membuka visualisasi data distribusi agar dapat dikontrol penuh oleh publik secara real-time.</li>
+    </ol>
+
+    <h4>H. Perbandingan Pola Pikir Anggaran</h4>
+    <ul>
+        <li><strong>Pola RUP Saat Ini:</strong> Berorientasi pada realisasi kuantitas penyerapan anggaran (Anggaran Habis).</li>
+        <li><strong>Pola Pikir Seharusnya:</strong> Berorientasi pada penyelesaian, mitigasi, dan pemulihan krisis sosial (Masalah Selesai).</li>
+    </ul>
+
+    <div class="quote-block" style="border-left-color: #e11d48; background-color: #fff1f2; color: #9f1239; font-weight: bold; font-size: 11.5pt;">
+        Kalimat Penutup Paling Menohok untuk Audiensi:<br>
+        “Yang kami lihat dalam RUP ini bukan keberpihakan sosial yang kuat, melainkan birokrasi belanja yang sibuk mengurus paket, konsumsi, administrasi, dan formalitas pengadaan. Padahal tugas Dinas Sosial bukan sekadar menghabiskan anggaran, tetapi memastikan masyarakat rentan benar-benar tertolong. Jika anggaran sosial lebih banyak habis pada komponen administratif dan seremonial dibanding dampak nyata, maka yang gagal bukan hanya pengadaannya, tetapi arah moral kebijakan sosial daerah itu sendiri.”
+    </div>
+</div>
+
+</body>
+</html>
